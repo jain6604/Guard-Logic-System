@@ -23,6 +23,35 @@ The program takes input conditions and evaluates them to decide:
 - Clean and modular code
 - Logical consistency
 - Easy to understand
+  --- Guard Decision ---
+  Keycard : YES
+  Alarm   : NO
+  Motion  : NO
+  → Door 1 [Green Door] — Safe Exit
+
+--- Guard Decision ---
+  Keycard : YES
+  Alarm   : YES
+  Motion  : NO
+  → Door 2 [Red Door] — Trap
+
+--- Guard Decision ---
+  Keycard : NO
+  Alarm   : NO
+  Motion  : YES
+  → Door 3 [Yellow Door] — Starting Point
+
+--- Guard Decision ---
+  Keycard : NO
+  Alarm   : NO
+  Motion  : NO
+  → Door 3 [Yellow Door] — Starting Point
+
+--- Guard Decision ---
+  Keycard : NO
+  Alarm   : YES
+  Motion  : YES
+  → Door 2 [Red Door] — Trap
 
 ## 👨‍💻 Author
 Saksham Jain
